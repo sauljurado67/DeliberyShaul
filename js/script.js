@@ -2,8 +2,8 @@
 /* ----------------------- API para el menu --------------------------*/
 
 function menuAPI () {
-    const url = '/js/api.json'
-    fetch(url)
+    
+    fetch('/js/api.json')
         .then(response => response.json())
         .then(data => {
             const menu = data;
